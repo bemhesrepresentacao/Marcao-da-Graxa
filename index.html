@@ -925,27 +925,40 @@
         </div>
     </div>
 
+    <section id="contato" class="contact-section">
+        <h2>Entre em Contato</h2>
+        <p>Atendimento para Mandaguari – PR e Região</p>
+        
+        <div class="contact-info">
+            <p><strong>WhatsApp:</strong> (43) 98842-8240</p>
+            <p><strong>E-mail:</strong> bemhesrepresentacao@gmail.com</p>
+            <p><strong>Localização:</strong> Mandaguari – PR e região</p>
+        </div>
+
+        <a href="https://wa.me/5543988428240" target="_blank" class="btn">Solicitar Atendimento</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Bemhes Representação. Parceria • Confiança • Resultados.</p>
+    </footer>
 
     <script>
         function openModal(id) {
-            const modal = document.getElementById(id);
-            if(modal) {
-                modal.style.display = 'flex';
-            }
+            document.getElementById(id).style.display = 'flex';
         }
 
         function closeModal(id) {
-            const modal = document.getElementById(id);
-            if(modal) {
-                modal.style.display = 'none';
-            }
+            document.getElementById(id).style.display = 'none';
         }
 
+        // Fechar modal ao clicar fora da caixa do conteúdo
         window.onclick = function(event) {
             if (event.target.classList.contains('modal')) {
-                event.target.style.display = "none";
+                event.target.style.display = 'none';
             }
         }
     </script>
+
 </body>
 </html>
+
